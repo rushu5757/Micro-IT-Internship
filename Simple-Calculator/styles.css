@@ -1,0 +1,71 @@
+body {
+font-family: "Times New Roman", Times, serif;
+background-color: lightgrey;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.calculator-body {
+width: 300px;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 1px 4px 6px rgba(1, 1, 1, 0.2);
+text-align: center;
+}
+h1 {
+font-size: 30px;
+margin-bottom: 15px;
+color: black;
+}
+.result {
+height: 40px;
+
+background: white;
+border: 2px solid black;
+border-radius: 7px;
+padding: 5px 10px;
+font-size: 20px;
+color: black;
+text-align: right;
+margin-bottom: 15px;
+}
+.button {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+}
+button {
+width: 60px;
+height: 50px;
+font-size: 20px;
+background: white;
+border: 2px solid black;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+button:hover {
+background: grey;
+}
+
+button[name="="] {
+background: darkgreen;
+
+color: white;
+font-weight: bold;
+}
+button[name="="]:hover {
+background: darkgreen;
+}
+button[name="C"],
+button[name="del"] {
+background: orangered;
+color: white;
+}
+button[name="C"]:hover,
+button[name="del"]:hover {
+background: orangered;
+}
